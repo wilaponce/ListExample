@@ -13,7 +13,7 @@ namespace ListExample.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         private IWebHostEnvironment _env;
-        public List<Category> CategoryList { get; set; }
+        public Category CategoryList { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger, IWebHostEnvironment env)
         {
@@ -24,7 +24,7 @@ namespace ListExample.Pages
         public void OnGet()
         {
 
-            CategoryList = Categories().Categories.ToList();
+            CategoryList = Categories(); 
         }
     
         public Category Categories()

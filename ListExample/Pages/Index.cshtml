@@ -6,11 +6,18 @@
 
 <div class="text-center ">
     <ul>
-   @foreach (var item in Model.CategoryList)
+   @foreach (var item in Model.CategoryList.Categories)
     {
       
             <li>
                 <a>@item.Name</a>
+                @foreach (var itemInItem in item.Categories)
+                {
+                    <ul>
+                        <li>@itemInItem.Name</li>
+                    </ul>
+                    
+                }
             </li>
        
     }

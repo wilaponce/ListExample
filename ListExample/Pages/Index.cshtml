@@ -1,0 +1,42 @@
+﻿@page "{handler?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center ">
+    <ul>
+   @foreach (var item in Model.CategoryLis
+    {
+      
+            <li>
+                <a>@item.Name</a>
+            </li>
+       
+    }
+    </ul>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(function () {
+
+
+            // $.ajax({
+            //     url: '/Categories',
+            //     type: 'GET',
+            //     contentType :'application/json; charset=utf-8',
+            //     success: function (result, status, xhr) {
+            //         //… rest of code left 
+            //         $("#categories").append(result, status);
+
+            //     },
+            //     error: function (e) {
+            //         console.log(e);
+            //     }
+            // })
+        })
+        
+    </script>
+
+}

@@ -1,0 +1,54 @@
+
+  {
+    "Categories": [
+      {
+        "Name": "Electronics",
+        "Categories": [
+          {
+            "Name": "Headphones",
+            "Categories": [
+              {
+                "Name": "Bluetooth"
+              },
+              {
+                "Name": "Wired"
+              }
+            ]
+
+          }
+        ]
+
+      },
+      {
+        "Name": "Clothing",
+        "Categories": [
+          {
+            "Name": "Hats"
+          },
+          {
+            "Name": "Shirts"
+          },
+          {
+            "Name": "Hoodies"
+          },
+          {
+            "Name": "Shoes"
+          }
+        ]
+      },
+      {
+        "Name": "Services",
+        "Categories": [
+          {
+            "Name": "Deliveries"
+
+          },
+          {
+            "Name": "CarRepair"
+
+          }
+        ]
+      }
+    ]
+  }
+
